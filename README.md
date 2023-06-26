@@ -32,5 +32,7 @@ Route::middleware('auth:sanctum')->get('/user', function () {
 });
 
 ### Sanctum Domain 及 Stateful 設置
-SESSION_DOMAIN=localhost:3000 // 或 「www.domain.com」（指定網域）或 「.domain.com」(多子網域），注意：不同網域是無法驗證的
-SANCTUM_STATEFUL_DOMAINS=localhost:3000 // 或 「www.domain.com」（指定網域）或 「*.domain.com」(多子網域），可以用,連接
+// 或 「www.domain.com」（指定網域）或 「.domain.com」(多子網域），注意：不同網域是無法驗證的
+SESSION_DOMAIN=localhost
+// 或 「www.domain.com」（指定網域）或 「*.domain.com」(多子網域），可以用,連接
+SANCTUM_STATEFUL_DOMAINS=localhost:3000
