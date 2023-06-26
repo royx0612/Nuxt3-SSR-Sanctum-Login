@@ -34,4 +34,5 @@ Route::middleware('auth:sanctum')->get('/user', function () {
 ### Sanctum Domain 及 Stateful 設置
 
 SESSION_DOMAIN=localhost
+
 SANCTUM_STATEFUL_DOMAINS=localhost:3000
