@@ -78,7 +78,9 @@ const {
 	},
 	{
 		onSuccess: () => router.push('/myMemberPage'),
-	}
+    onError: (e) => console.log(e)
+	},
+  
 );
 
 
